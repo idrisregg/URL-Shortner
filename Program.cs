@@ -7,7 +7,7 @@ namespace Prac;
 
 public class Program()
 {
-    private static List<string> li = new List<string>(10);
+    private static List<string> li = new List<string>();
     private static string path = "db.txt";
     private static string Our = "Regg.com/";
     public static async Task Main(string[] args)
@@ -34,6 +34,13 @@ public class Program()
         foreach (var item in li)
         {
             Console.WriteLine(item);
+        }
+        if (li.Count > 20)
+        {
+            _helper.Quest("You have reached the limit of 20 links");
+            Console.WriteLine("Choose one of your Links Above");
+            await _helper.Picker(li);
+            return;
         }
         _helper.Quest("Enter the url you wish to Shorten");
 
