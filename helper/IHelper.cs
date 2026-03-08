@@ -6,4 +6,6 @@ public interface IHelper {
     string SubmitUrl();
 
     Task GoTo(string url);
+
+    Task Picker(List<string> li);
 }
