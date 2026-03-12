@@ -23,10 +23,22 @@ internal class Helper : IHelper
         return response;
     }
 
+    public static string OpenBrowser()
+    {
+        var fireFox = @"C:\Program Files\Mozilla Firefox\firefox.exe";
+        var chrome = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+
+        if (!File.Exists(chrome))
+        {
+            return fireFox;
+        }
+        return chrome;
+    }
+
     public async Task GoTo(string url)
     {
         using var process = new Process();
-        process.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+        process.StartInfo.FileName = OpenBrowser();
         process.StartInfo.Arguments = url;
         try
         {

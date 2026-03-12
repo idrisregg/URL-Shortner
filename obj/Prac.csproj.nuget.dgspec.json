@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\Prac\\Prac.csproj": {}
+    "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\URL-Shortner\\Prac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\Prac\\Prac.csproj": {
+    "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\URL-Shortner\\Prac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\Prac\\Prac.csproj",
+        "projectUniqueName": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\URL-Shortner\\Prac.csproj",
         "projectName": "Prac",
-        "projectPath": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\Prac\\Prac.csproj",
+        "projectPath": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\URL-Shortner\\Prac.csproj",
         "packagesPath": "C:\\Users\\ayubr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\Prac\\obj\\",
+        "outputPath": "C:\\Users\\ayubr\\OneDrive\\Desktop\\IDRIS\\URL-Shortner\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ayubr\\AppData\\Roaming\\NuGet\\NuGet.Config"
