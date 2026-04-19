@@ -72,7 +72,6 @@ public class Program()
         if (Console.ReadLine() == "yes")
         {
             File.WriteAllText(path, string.Empty);
-            File.Delete(path);
             Console.WriteLine("Link List Cleared");
         }
         else
