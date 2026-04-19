@@ -9,6 +9,7 @@ public class Program()
 {
     private static List<string> li = new List<string>();
     private static string path = "db.txt";
+
     private static string Our = "Regg.com/";
     public static async Task Main(string[] args)
     {
@@ -28,7 +29,11 @@ public class Program()
         var _service = serviceProv.GetRequiredService<IGenerator>();
 
         _helper.Quest("_______ Welcome To Simple Encoder_______");
-        Console.WriteLine("These are your Already Created Links : ");
+
+        if (new FileInfo(path).Length != 0)
+        {
+            _helper.Quest("These are your Already Created Links : ");
+        }
 
         li = File.ReadAllLines(path).ToList();
         foreach (var item in li)
@@ -38,7 +43,7 @@ public class Program()
         if (li.Count > 20)
         {
             _helper.Quest("You have reached the limit of 20 links");
-            Console.WriteLine("Choose one of your Links Above");
+            Console.WriteLine("Choose one of your Links Above (1-20)");
             await _helper.Picker(li);
             return;
         }
@@ -62,5 +67,17 @@ public class Program()
         Console.WriteLine("Choose one of your Links Above");
 
         await _helper.Picker(li);
+
+        _helper.Quest("Do you wish to Clear the list? (yes/no)");
+        if (Console.ReadLine() == "yes")
+        {
+            File.WriteAllText(path, string.Empty);
+            File.Delete(path);
+            Console.WriteLine("Link List Cleared");
+        }
+        else
+        {
+            return;
+        }
     }
 }
