@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace Prac.helper;
 
-internal class Helper : IHelper
+public class Helper : IHelper
 {
     public void Quest(string question)
     {
